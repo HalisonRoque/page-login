@@ -9,13 +9,19 @@ section{
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: rgb(66, 129, 211);
+    background: url('../imagens/backgraund1.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 .form-box{
     position: relative;
     width: 400px;
     height: 450px;
-    background: red;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,13 +46,14 @@ h2{
     color: #fff;
     font-size: 1em;
     pointer-events: none;
-    transition: .5s;
+    transition: .1s;
 }
-input:focus ~ label,
-input:focus ~ :valid{
-    top: -5px;
+input:focus ~ label, 
+input:valid ~ label{
+top: -5px;
 }
-.inputbox input{
+
+.inputbox input {
     width: 100%;
     height: 50px;
     background: transparent;
@@ -61,6 +68,50 @@ input:focus ~ :valid{
     right: 8px;
     color: #fff;
     font-size: 1.2em;
-    top: 20px;
-    
+    top: 20
+    px;    
 }
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;    
+}
+.forget label input{
+    margin-right: 3px;    
+}
+.forget label a{
+    color: rgb(30, 247, 1);
+    text-decoration: none;    
+}
+.forget label a:hover{
+    text-decoration: underline;    
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: rgb(233, 238, 234);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;    
+}
+.registrar{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+
+}
+.registrar p a{
+text-decoration: none;
+color: rbg;
+font-weight: 600;
+}
+.registrar p a:hover{
+    text-decoration: underline;    
+}
+
